@@ -1,0 +1,65 @@
+*{margin:0;padding:0}
+body{
+	width:100%;
+	height:100%;
+	background:url("../images/teacherbg.jpg") repeat-x scroll;
+	ackground-size: cover; 
+}
+h1{color:#F8EFBA; margin-top: 20px;margin-left: 50px;display: inline-block}
+h2{margin-top:10px;margin-left:300px;color:#F8EFBA}
+h3{color:#F8EFBA; margin-top: 20px;margin-left: 50px;display: inline-block}
+span{color:white; margin-top: 20px;margin-left: 5px}
+.bigdiv{width:1000px;height:600px;margin:10px auto;
+		position:relative;}
+.bigdiv .leftdiv{width:250px;height:600px;
+				float:left;background-color:#7ed6df}
+.bigdiv .leftdiv ul li{list-style:none;width:250px;height:100px;
+						text-align:center;line-height:100px;color:#fff;cursor:pointer;}
+/*选中某功能使其高亮*/
+.bigdiv .leftdiv ul>li:hover{background-color:#40739e;font-size:25px}
+/*首先设置每个模块div都不可见*/
+.bigdiv .rightdiv div{width:750px;height:600px;position:absolute;top:0;right:0;background-color:#40739e;}
+/*先设置一个可见其余不可见*/
+.bigdiv .rightdiv .show{display:block}
+.bigdiv .rightdiv .hide{display:none}
+/*小技巧 对 li进行hover 对li的子元素进行操作*/
+.leftdiv ul li{list-style: none}
+
+/*以下是对右边add学生  div的布局*/
+.bigdiv .rightdiv div span{color:white;
+							font-size:15px;
+							font-weight:600;
+							margin-left:100px;
+							}
+.bigdiv .rightdiv div input{border:3px solid #ffffff;
+							border-radius:10px; 
+							font-size:19px;
+							font-weight:bold;
+							font-family: sans-serif;
+							margin-left:100px;
+							margin-top:30px;
+							}
+.bigdiv .rightdiv div #add{margin-left:300px;cursor:pointer;}
+.bigdiv .rightdiv div #add1{margin-left:300px;cursor:pointer;}
+.bigdiv .rightdiv div #del{margin-left:300px;cursor:pointer;}
+.bigdiv .rightdiv div #alt{margin-left:300px;cursor:pointer;}
+.bigdiv .rightdiv div #alt1{margin-left:300px;cursor:pointer;}
+.bigdiv .rightdiv div #find{margin-left:300px;cursor:pointer;}
+
+
+.bigdiv .rightdiv div #add:hover{border-radius:10px; 
+	border:3px solid black;}
+.bigdiv .rightdiv div #add1:hover{border-radius:10px; 
+	border:3px solid black;}
+.bigdiv .rightdiv div #del:hover{border-radius:10px; 
+	border:3px solid black;}
+.bigdiv .rightdiv div #alt:hover{border-radius:10px; 
+	border:3px solid black;}
+.bigdiv .rightdiv div #alt1:hover{border-radius:10px; 
+	border:3px solid black;}
+.bigdiv .rightdiv div #find:hover{border-radius:10px; 
+	border:3px solid black;}
+/* 查询学生时展示的盒子样式*/
+.bigdiv .rightdiv div #showstudent{width:500px;height:390px;border:1px solid #fff;position:absolute;top:200px;left:130px}
+.bigdiv .rightdiv div #tableinfo{margin:5px auto;border:1px;cellpadding:1px;cellspacing:0;width:50%;align:center;text-algin:center;}
+
